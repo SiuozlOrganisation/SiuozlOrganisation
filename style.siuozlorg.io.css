@@ -1,4 +1,4 @@
-body {
+#grad {
   background-image: linear-gradient(to bottom right, red, yellow); 
 }
 h1 {
