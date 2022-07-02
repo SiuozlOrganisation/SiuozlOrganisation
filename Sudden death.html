@@ -3,17 +3,17 @@
  <script>
     function updateText1(){
       let labelElement = document.getElementById('text');
+      var lvl = 0
 
       labelElement.innerText = 'You wake up in a strange place... You are in a hall with a fork in front of you. Behind you is a dead end.';
-        const button = document.createElement('button')
-        button.innerText = 'Continue'
+        lvl = lvl + 1
     }
   </script>
   <body>
     <p id="text" style="size:64px;">
       Sudden death
     </p>
-    <button id="control1" onclick="updateText1();">
+    <button id="control" onclick="updateText + lvl + ();">
       Start
     </button>
   </body>
