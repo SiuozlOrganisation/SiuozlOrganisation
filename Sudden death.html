@@ -2,15 +2,23 @@
 <html>
  <script>
   var lvl = 0
+  var page = 0
   //window.alert('Sudden Death contains violence, but a kid version exists. Please go check it out if you are a kid!')
   function updateText0(){
       let labelElement = document.getElementById('text');
       labelElement.innerText = 'You wake up in a strange place... You are in a hall with a fork in front of you. Behind you is a dead end.';
   lvl = lvl + 1
-     let btn = document.createElement("button");
-btn.innerHTML = "Click Me";
+  page = page + 1
+let btn = document.createElement("button");
+btn.innerHTML = "Next";
+btn.onclick = function (setPage(page)) {
+  alert("Page changed");
+};
 document.body.appendChild(btn);
     }
+function setPage (page) {
+  
+}
   </script>
   <body style="background-color:blue">
     <p id="text" style="size:64px;">
